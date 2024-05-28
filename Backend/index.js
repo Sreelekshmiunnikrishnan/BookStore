@@ -22,7 +22,7 @@ app.use(cors());
 app.use('/books',bookRoutes);
 mongoose.connect(MongoDBURL).then(() =>{
   console.log("App connected to database");
-app.listen(PORT, () => {
+app.listen(PORT || 3002, () => {
   console.log(`App is  listening on port ${PORT}`);
 });
 
