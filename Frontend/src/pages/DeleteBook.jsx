@@ -9,7 +9,7 @@ const DeleteBook = () =>{
   const {id} =useParams();
   const handleDeleteBook =() =>{
     setLoading(true);
-    axios.delete(`http://localhost:5556/books/${id}`)
+    axios.delete(`https://bookstore-cukn.onrender.com/books/${id}`)
     .then(()=>{
       setLoading(false);
       navigate("/")

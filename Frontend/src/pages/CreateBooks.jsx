@@ -16,7 +16,7 @@ function CreateBooks(){
       publishYear
     };
     setLoading(true);
-    axios.post('http://localhost:5556/books',data)
+    axios.post('https://bookstore-cukn.onrender.com/books',data)
     .then(()=>{
       setLoading(false);
       navigate("/")

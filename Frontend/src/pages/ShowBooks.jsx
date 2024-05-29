@@ -10,7 +10,7 @@ const ShowBooks =()=> {
     useEffect(() => {
         setLoading(true);
         // Fetch books data from your backend API
-        axios.get(`http://localhost:5556/books/${id}`)
+        axios.get(`https://bookstore-cukn.onrender.com/books/${id}`)
           .then((response) => {
             if (response.data) {
              

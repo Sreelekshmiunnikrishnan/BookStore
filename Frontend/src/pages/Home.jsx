@@ -14,7 +14,7 @@ const Home = () => {
   useEffect(() => {
     setLoading(true);
     // Fetch books data from your backend API
-    axios.get('http://localhost:5556/books')
+    axios.get('https://bookstore-cukn.onrender.com/books')
       .then((response) => {
         if (response.data) {
          

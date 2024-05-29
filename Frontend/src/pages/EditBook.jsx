@@ -14,7 +14,7 @@ const EditBooks =() =>{
   useEffect(() => {
     setLoading(true);
     // Fetch books data from your backend API
-    axios.get(`http://localhost:5556/books/${id}`)
+    axios.get(`https://bookstore-cukn.onrender.com/books/${id}`)
       .then((response) => {
         
           setTitle(response.data.title);
@@ -36,7 +36,7 @@ const EditBooks =() =>{
       publishYear
     };
     setLoading(true);
-    axios.put(`http://localhost:5556/books/${id}`,data)
+    axios.put(`https://bookstore-cukn.onrender.com/books/${id}`,data)
     .then(()=>{
       setLoading(false);
       navigate("/")
